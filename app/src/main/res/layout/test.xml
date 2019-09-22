@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+    <LinearLayout
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        >
+
+        <info.hoang8f.widget.FButton
+            android:id="@+id/f_twitter_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/basic_button"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="20dp"
+            android:drawableLeft="@drawable/twitter"
+            android:drawablePadding="0dp"
+            android:minHeight="80dp"
+            android:minWidth="250dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="20dp"
+            android:paddingTop="-5dp"
+            android:text="Twitter"
+            android:textColor="@android:color/white"
+            fbutton:cornerRadius="15dp"
+            fbutton:shadowEnabled="true"
+            fbutton:shadowHeight="6dp" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
