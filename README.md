@@ -10,18 +10,22 @@ In this branch you'll find:
 *   Dependency injection using [Hilt](https://developer.android.com/training/dependency-injection/hilt-android).
 
 
+
 ## Screenshots
 
 ![Search Page](path/to/your/screenshot1.png)
+*Search Page*
+
 ![Detail Page](path/to/your/screenshot2.png)
+*Detail Page*
 
 ## Architecture
 
-This project is organized following the Clean Architecture principles, which divides the code into multiple layers:
+This project is organized following the MVVM architecture pattern with Clean Architecture principles, which divides the code into multiple layers:
 
 ### Presentation Layer
 
-- **ViewModels**: Manage UI-related data and handle user interactions.
+- **ViewModels**: Manage UI-related data and handle user interactions. Implements MVVM architecture with Jetpack Compose.
 - **Compose UI**: Jetpack Compose is used to build the UI components.
 
 ### Domain Layer
@@ -33,6 +37,17 @@ This project is organized following the Clean Architecture principles, which div
 
 - **Repositories**: Abstract the data sources and provide data to the use cases.
 - **Data Sources**: Include both remote (e.g., network) and local (e.g., database) data sources.
+
+## APIs Used
+
+This project integrates with the following endpoints of the Star Wars API (SWAPI):
+
+- **People Search API**: Used for searching characters (people) on the search page.
+- **Planet API**: Provides detailed information about planets on the detail page.
+- **Species API**: Provides detailed information about species on the detail page.
+- **Films API**: Provides detailed information about films on the detail page.
+
+For more information on these APIs, refer to the [SWAPI Documentation](https://swapi.dev/documentation).
 
 ## Dependency Injection
 
